@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+	<PropertyGroup>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<NoWarn>$(NoWarn);1591</NoWarn>
+	</PropertyGroup>
+
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<OutputPath>C:\Users\vanderson.mota\Documents\ProjetosVisualStudio\Projeto2\RegisterLogin.API\RegisterLogin.API\bin\Debug\netcoreapp3.1</OutputPath>
+		<DocumentationFile>C:\Users\vanderson.mota\Documents\ProjetosVisualStudio\Projeto2\RegisterLogin.API\RegisterLogin.API\bin\Debug\netcoreapp3.1\RegisterLogin.API.xml</DocumentationFile>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="Dapper" Version="2.0.90" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="10.1.0" />
+    <PackageReference Include="Npgsql" Version="5.0.4" />
+    <PackageReference Include="Signa.Library" Version="4.3.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+
+</Project>
